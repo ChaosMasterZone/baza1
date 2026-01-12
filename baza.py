@@ -56,7 +56,7 @@ with tab1:
                     "nazwa": prod_nazwa,
                     "liczba": prod_liczba,
                     "cena": prod_cena,
-                    "Kategoria_id": kategorie_opcje[wybrana_kat_nazwa]
+                    "kategoria_id": kategorie_opcje[wybrana_kat_nazwa]
                 }
                 supabase.table("Produkty").insert(payload).execute()
                 st.success(f"Produkt '{prod_nazwa}' został dodany!")
